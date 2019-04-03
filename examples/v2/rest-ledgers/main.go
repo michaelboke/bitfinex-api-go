@@ -7,8 +7,8 @@ import (
 
 func main() {
 
-	key := "Key"
-	secret := "Secret"
+	key := ""
+	secret := ""
 	c := rest.NewClient().Credentials(key, secret)
 
 	ledgers, err := c.Ledgers.Ledgers("BTC",1539159010000,1554237570367,200)
